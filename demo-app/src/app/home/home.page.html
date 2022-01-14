@@ -1,0 +1,46 @@
+<ion-content>
+  <!-- <ion-input id="user-input" placeholder="Enter your name here"></ion-input>
+  <ion-button id="btn">Save Your name</ion-button> -->
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/imgs/ionic-private-contact.jpg" alt="">
+        <ion-input placeholder="Enter password here" type="password" id="user-input"></ion-input>
+        <ion-button color="danger" expand="full" id="set-pass-btn">
+          <ion-icon name="key" slot="start"></ion-icon>
+          <ion-label>Set Password</ion-label>
+        </ion-button>
+        <ion-button color="success" expand="full" id="access-pass-btn" style="display: none;">
+          <ion-icon name="key" slot="start"></ion-icon>
+          <ion-label>Access</ion-label>
+        </ion-button>
+        <small id="error-msg" style="color: red; display: none; font-size: 16px;">Password Field is empty</small>
+        <small id="password-wrong" style="color: red; display: none; font-size: 16px;">Entered password is wrong</small>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <div id="app-page" style="display: none;">
+
+    <ion-card style="display: none;" id="contact-form">
+      <ion-card-header>
+        <img src="assets/imgs/user-png.png" alt="img">
+        <ion-input placeholder="Your name" style="border-bottom: .5px solid rgb(177, 176, 176);"
+          class="ion-margin-bottom" id="contact-name">
+        </ion-input>
+        <ion-input placeholder="0123456789" style="border-bottom: .5px solid rgb(177, 176, 176);" id="contact-number">
+        </ion-input>
+      </ion-card-header>
+    </ion-card>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="add-btn">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="save-btn" style="display: none;">
+      <ion-fab-button color="success">
+        <ion-icon name="save"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>
