@@ -1,0 +1,469 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ionic-demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center; margin-top: 10px;">
+
+    <!-- Default -->
+    <ion-button (click)="presentAlert()">Call Alert</ion-button>
+
+    <!-- Anchor -->
+    <ion-button href="#">Anchor</ion-button>
+
+    <!-- Colors -->
+    <ion-button color="primary"> color="primary "Primary</ion-button>
+    <ion-button color="secondary">Secondary</ion-button>
+    <ion-button color="tertiary">Tertiary</ion-button>
+    <ion-button color="success">Success</ion-button>
+    <ion-button color="warning">Warning</ion-button>
+    <ion-button color="danger">Danger</ion-button>
+    <ion-button color="light">Light</ion-button>
+    <ion-button color="medium">Medium</ion-button>
+    <ion-button color="dark">Dark</ion-button>
+
+    <!-- Expand -->
+    <ion-button expand="full">Full Button</ion-button>
+    <ion-button expand="block">Block Button</ion-button>
+
+    <!-- Round -->
+    <ion-button shape="round">Round Button</ion-button>
+
+    <!-- Fill -->
+    <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+    <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+    <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+
+    <!-- Icons -->
+    <ion-button>
+      <ion-icon slot="start" name="star"></ion-icon>
+      Left Icon
+    </ion-button>
+
+    <ion-button>
+      Right Icon
+      <ion-icon slot="end" name="star"></ion-icon>
+    </ion-button>
+
+    <ion-button>
+      <ion-icon slot="icon-only" name="star"></ion-icon>
+    </ion-button>
+
+    <!-- Sizes -->
+    <ion-button size="large">Large</ion-button>
+    <ion-button>Default</ion-button>
+    <ion-button size="small">Small</ion-button>
+
+    <h1>Ionic icons</h1>
+    <ion-button>Video
+      <ion-icon name="play-circle-sharp" style="font-size: 30px;"></ion-icon>
+    </ion-button>
+
+
+    <h1>Ion Grid System</h1>
+
+    <ion-grid>
+      <h3>Space equally divided among-4 column</h3>
+      <ion-row>
+        <ion-col>
+          ion-col-1
+        </ion-col>
+        <ion-col>
+          ion-col-2
+        </ion-col>
+        <ion-col>
+          ion-col-3
+        </ion-col>
+        <ion-col>
+          ion-col-4
+        </ion-col>
+      </ion-row>
+      <h3>First column taking half of the window space for that use size="6" in opening tag of icon-col next half
+        space
+        is equally divided between other 2 column</h3>
+      <ion-row>
+        <ion-col size="6">
+          ion-col [size="6"]
+        </ion-col>
+        <ion-col>
+          ion-col
+        </ion-col>
+        <ion-col>
+          ion-col
+        </ion-col>
+      </ion-row>
+      <h3>First and last column taking 1/4th and 1/4th of the sapce and rest half of the space covered by middle
+        column
+      </h3>
+      <ion-row>
+        <ion-col size="3">
+          ion-col [size="3"]
+        </ion-col>
+        <ion-col>
+          ion-col
+        </ion-col>
+        <ion-col size="3">
+          ion-col [size="3"]
+        </ion-col>
+      </ion-row>
+      <h3>second column have offset-3 from left</h3>
+      <ion-row>
+        <ion-col size="3">
+          ion-col [size="3"]
+        </ion-col>
+        <ion-col size="3" offset="3">
+          ion-col [size="3"] [offset="3"]
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-align-items-start">
+        <ion-col>
+          [start] ion-col
+        </ion-col>
+        <ion-col>
+          [start] ion-col
+        </ion-col>
+        <ion-col class="ion-align-self-end">
+          [start] ion-col [end]
+        </ion-col>
+        <ion-col>
+          ion-col
+          <br>#
+          <br>#
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          [center] ion-col
+        </ion-col>
+        <ion-col>
+          [center] ion-col
+        </ion-col>
+        <ion-col>
+          [center] ion-col
+        </ion-col>
+        <ion-col>
+          ion-col
+          <br>#
+          <br>#
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col size="12" size-sm>
+          ion-col [size="12"] [size-sm]
+        </ion-col>
+        <ion-col size="12" size-sm>
+          ion-col [size="12"] [size-sm]
+        </ion-col>
+        <ion-col size="12" size-sm>
+          ion-col [size="12"] [size-sm]
+        </ion-col>
+        <ion-col size="12" size-sm>
+          ion-col [size="12"] [size-sm]
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="https://i.pravatar.cc/150?img=11" alt="" size="3" size-md>
+        </ion-col>
+        <ion-col>
+          <img src="https://i.pravatar.cc/150?img=21" alt="">
+        </ion-col>
+        <ion-col>
+          <img src="https://i.pravatar.cc/150?img=31" alt="">
+        </ion-col>
+        <ion-col>
+          <img src="https://i.pravatar.cc/150?img=51" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h2>Ionic Badges</h2>
+
+    <!-- Colors -->
+    <ion-badge class="primary-badge">11</ion-badge>
+    <ion-badge color="secondary">22</ion-badge>
+    <ion-badge color="tertiary">33</ion-badge>
+    <ion-badge color="success">44</ion-badge>
+    <ion-badge color="warning">55</ion-badge>
+    <ion-badge color="danger">66</ion-badge>
+    <ion-badge color="light">77</ion-badge>
+    <ion-badge color="medium">88</ion-badge>
+    <ion-badge color="dark">99</ion-badge>
+
+    <!-- Item with badge on left and right -->
+    <ion-item>
+      <ion-badge slot="start">11</ion-badge>
+      <ion-label>My Item</ion-label>
+      <ion-badge slot="end">22</ion-badge>
+    </ion-item>
+
+    <h2>Ion Card</h2>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>ion-item in a card, icon left, button right</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-item href="#" class="ion-activated">
+        <ion-icon name="wifi" slot="start"></ion-icon>
+        <ion-label>Card Link Item 1 activated</ion-label>
+      </ion-item>
+
+      <ion-item href="#">
+        <ion-icon name="wine" slot="start"></ion-icon>
+        <ion-label>Card Link Item 2</ion-label>
+      </ion-item>
+
+      <ion-item class="ion-activated">
+        <ion-icon name="warning" slot="start"></ion-icon>
+        <ion-label>Card Button Item 1 activated</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="walk" slot="start"></ion-icon>
+        <ion-label>Card Button Item 2</ion-label>
+      </ion-item>
+    </ion-card>
+    <h2>Ion checkbox</h2>
+    <!-- Default Checkbox -->
+    <ion-checkbox></ion-checkbox>
+
+    <!-- Disabled Checkbox -->
+    <ion-checkbox disabled="true"></ion-checkbox>
+
+    <!-- Checked Checkbox -->
+    <ion-checkbox checked="true"></ion-checkbox>
+
+    <!-- Checkbox Colors -->
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-checkbox color="secondary"></ion-checkbox>
+    <ion-checkbox color="danger"></ion-checkbox>
+    <ion-checkbox color="light"></ion-checkbox>
+    <ion-checkbox color="dark"></ion-checkbox>
+
+    <!-- Checkboxes in a List -->
+    <ion-list>
+      <ion-item *ngFor="let entry of form">
+        <ion-label>{{entry.val}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <h2>Ion Input</h2>
+    <!-- Default Input -->
+    <ion-input></ion-input>
+
+    <!-- Input with value -->
+    <ion-input value="custom"></ion-input>
+
+    <!-- Input with placeholder -->
+    <ion-input placeholder="Enter Input"></ion-input>
+
+    <!-- Input with clear button when there is a value -->
+    <ion-input clearInput value="clear me"></ion-input>
+
+    <!-- Number type input -->
+    <ion-input type="number" value="333"></ion-input>
+
+    <!-- Disabled input -->
+    <ion-input value="Disabled" disabled></ion-input>
+
+    <!-- Readonly input -->
+    <ion-input value="Readonly" readonly></ion-input>
+
+    <!-- Inputs with labels -->
+    <ion-item>
+      <ion-label>Default Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Floating Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Fixed Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Stacked Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <h2>Ionic List</h2>
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-item>
+        <ion-label>Pokémon Yellow</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Mega Man X</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>The Legend of Zelda</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pac-Man</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Super Mario World</ion-label>
+      </ion-item>
+    </ion-list>
+    <!-- List of Input Items -->
+    <ion-list>
+      <ion-item>
+        <ion-label>Input</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Toggle</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>Radio</ion-label>
+        <ion-radio slot="end"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Checkbox</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <!-- List of Sliding Items -->
+    <ion-list>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Item</ion-label>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option>Unread</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Item</ion-label>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option>Unread</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+    <h2>Ionic Text</h2>
+    <ion-text color="secondary">
+      <h1>H1: The quick brown fox jumps over the lazy dog</h1>
+    </ion-text>
+
+    <ion-text color="primary">
+      <h2>H2: The quick brown fox jumps over the lazy dog</h2>
+    </ion-text>
+
+    <ion-text color="light">
+      <h3>H3: The quick brown fox jumps over the lazy dog</h3>
+    </ion-text>
+
+    <ion-text color="danger">
+      <h4>H4: The quick brown fox jumps over the lazy dog</h4>
+    </ion-text>
+
+    <ion-text color="dark">
+      <h5>H5: The quick brown fox jumps over the lazy dog</h5>
+    </ion-text>
+
+    <p>
+      I saw a werewolf with a Chinese menu in his hand.
+      Walking through the <ion-text color="danger"><sub>streets</sub></ion-text> of Soho in the rain.
+      He <ion-text color="primary"><i>was</i></ion-text> looking for a place called Lee Ho Fook's.
+      Gonna get a <ion-text color="secondary"><a>big dish of beef chow mein.</a></ion-text>
+      <ion-text color="danger">
+        <ion-icon name="cut"></ion-icon>
+      </ion-text>
+    </p>
+
+    <h2>Ion Chips</h2>
+    <ion-chip>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-label color="secondary">Secondary Label</ion-label>
+    </ion-chip>
+
+    <ion-chip color="secondary">
+      <ion-label color="dark">Secondary w/ Dark label</ion-label>
+    </ion-chip>
+
+    <ion-chip [disabled]="true">
+      <ion-label>Disabled Chip</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="heart" color="dark"></ion-icon>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-label>Button Chip</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="pin" color="primary"></ion-icon>
+      <ion-label>Icon Chip</ion-label>
+      <ion-icon name="close"></ion-icon>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Avatar Chip</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+
+    <h2>Ion Toster</h2>
+    <ion-button (click)="presentToast()">Show Toaster</ion-button>
+  </div>
+</ion-content>
+
+
+
+
+<!-- <ion-content id="container" color="primary">
+  <h1 color="secondary">Hello</h1>
+</ion-content> -->
