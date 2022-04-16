@@ -188,7 +188,7 @@ export class HomePage implements OnInit, AfterViewInit {
     let all_contacts = localStorage.getItem('contact-detail')
     let contacts = JSON.parse(all_contacts)
 
-    for (let i = 0; i < contacts.length; i++) {
+    for (let i = 0; i < contacts?.length; i++) {
       let name = contacts[i].name;
       let number = contacts[i].number;
 
